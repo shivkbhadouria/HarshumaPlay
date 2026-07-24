@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Production builds
+dist/
+build/
+
+# Local env files and logs
+.env
+.env.local
+*.log
+.eslintcache
+
+# Vite/Turbo system caches
+.turbo/
+.vite/
