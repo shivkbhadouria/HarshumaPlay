@@ -26,20 +26,6 @@ harshuma-games/
 └── pnpm-workspace.yaml  # Workspace directory maps
 ```
 
----
-
-## 🚀 Key Technical Highlights
-
-### ⚡ Double-Bypass Development Flow (Zero Rebuilds)
-To counter the limitation where Vite Module Federation requires a production build to share remote assets locally, the container dashboard leverages an automated routing bypass during local development:
-```javascript
-const TicTacToeGame = lazy(() => 
-  isDevelopment 
-    ? import('../../game-tictactoe/src/App.tsx') // Direct local file access for hot-reloads
-    : import('game_tictactoe/App')                // Runtime Module Federation fallback
-);
-```
-
 ## 🛠️ Local Development Setup
 
 Ensure you have **Node.js (v20.19.0+ or v22.12.0+)** and **pnpm** installed on your machine.
