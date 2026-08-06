@@ -10,7 +10,7 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       // Expose the components
       exposes: {
-        './App': './src/App.jsx', 
+        './App': './src/tictac/TicTacToe.tsx', 
       },
       shared: ['react', 'react-dom']
     })

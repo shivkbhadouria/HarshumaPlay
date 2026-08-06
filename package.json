@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pnpm -r build",
+    "start": "node scripts/run-games.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@originjs/vite-plugin-federation": "^1.4.1"
-  }
+    "@originjs/vite-plugin-federation": "^1.4.1",
+    "prompts": "^2.4.2"
+  },
+  "type": "module"
 }
